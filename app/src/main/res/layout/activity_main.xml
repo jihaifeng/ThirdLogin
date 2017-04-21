@@ -1,15 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.jihf.thirdlogin.MainActivity">
 
   <Button
       android:id="@+id/btn_share_wx"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="share to wx"/>
+      android:gravity="center"
+      android:text="share to wx"
+      android:textSize="18sp"/>
+
+  <Button
+      android:id="@+id/btn_share_QQ"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="share to QQ"
+      android:textSize="18sp"/>
+
+  <android.support.v7.widget.CardView
+      android:layout_width="100dp"
+      android:layout_height="100dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_launcher"/>
+  </android.support.v7.widget.CardView>
 
 </LinearLayout>

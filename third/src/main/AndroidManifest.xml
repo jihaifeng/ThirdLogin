@@ -28,5 +28,19 @@
         android:launchMode="singleTop"
         android:theme="@android:style/Theme.Dialog"
         />
+    <activity
+        android:name=".ShareActivity"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar"
+        >
+      <intent-filter>
+        <category android:name="android.intent.category.DEFAULT"/>
+
+        <action android:name="com.neusoft.td.android.wo116114_com.raiyi.hfbshare.recharg"/>
+        <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+      </intent-filter>
+    </activity>
   </application>
 </manifest>
